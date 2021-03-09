@@ -1,0 +1,75 @@
+﻿<Window x:Class="Ekzamen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ekzamen"
+        mc:Ignorable="d"
+        Title="Генератор вариантов" Height="450" Width="800">
+    <Grid>
+        <Border BorderBrush="Black"  BorderThickness="2">
+            <StackPanel>
+                <Border Margin="5" BorderBrush="Black"  BorderThickness="2">
+                    <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="2" >открыть файл</TextBlock>
+                    <TextBox 
+                        MinWidth="150" 
+                        Margin="2" x:Name="tbContent" ></TextBox>
+                    <Button Margin="2" x:Name="btOpen" Content="Открыть" 
+                            Click="btOpen_Click"
+                            ></Button>
+                </StackPanel>
+                </Border>
+               
+                <Border Margin="5" BorderBrush="Black"  BorderThickness="2">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="2" >Кол-во  вопросов в банке вопросов</TextBlock>
+                        <TextBox 
+                        MinWidth="50"  HorizontalContentAlignment="Center"
+                        Margin="2" x:Name="tbCountContent" >файл не открыт</TextBox>
+                    </StackPanel>
+                </Border>
+               
+                <Border Margin="5" BorderBrush="Black"  BorderThickness="2">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="2" >Укажите кол-во  вопросов в варианте</TextBlock>
+                        <TextBox 
+                        MinWidth="50"  HorizontalContentAlignment="Center"
+                        Margin="2" x:Name="tbCountVarContent" ></TextBox>
+                    </StackPanel>
+                </Border>
+
+                <Border Margin="5" BorderBrush="Black"  BorderThickness="2">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="2" >Укажите кол-во вариантов</TextBlock>
+                        <TextBox 
+                        MinWidth="50"  HorizontalContentAlignment="Center"
+                        Margin="2" x:Name="tbCountVar" >30</TextBox>
+                    </StackPanel>
+                </Border>
+
+                <Border Margin="5" BorderBrush="Black"  BorderThickness="2">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="2" >Укажите папку куда сохранить варианты</TextBlock>
+                        <TextBox 
+                        MinWidth="150" 
+                        Margin="2" x:Name="tbPathVar" ></TextBox>
+                        <Button Margin="2" x:Name="btSave" Content="Открыть" 
+                            Click="btSave_Click"
+                            ></Button>
+                    </StackPanel>
+                </Border>
+
+                <Border HorizontalAlignment="Center" Margin="5" BorderBrush="Black"  BorderThickness="2">
+                    <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                      
+                        <Button Margin="2" x:Name="btGo" Content="Генерировать варианты" 
+                            Click="btGo_Click"
+                            ></Button>
+                    </StackPanel>
+                </Border>
+
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
