@@ -94,7 +94,7 @@ namespace Ekzamen
 
             Random random = new Random(DateTime.Now.Millisecond);
 
-            while(newQuestions.Count<=qCount)
+            while(newQuestions.Count<qCount)
             {
                 int index = random.Next(0, questions.Count);
 
